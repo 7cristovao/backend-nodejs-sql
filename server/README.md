@@ -1,0 +1,34 @@
+npm install express cors
+npm install express cors mysql2
+node index.js
+npm install nodemon
+npm start
+
+sudo apt upgrade -y
+sudo apt install mariadb-server
+sudo systemctl start mariadb
+sudo systemctl enable mariadb
+sudo mysql_secure_installation
+sudo mysql -u root -p
+sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+
+sudo mysql -u root -p
+npm install sequelize sequelize-cli
+sequelize init
+export PATH=./node_modules/.bin:$PATH
+sequelize init
+npm start
+
+sudo snap install insomnia
+
+
+
+CREATE USER 'swordcole'@'localhost' IDENTIFIED BY 'admin';
+GRANT ALL PRIVILEGES ON TutorialDB.* TO 'swordcole'@'localhost';
+FLUSH PRIVILEGES;
+CREATE SCHEMA TutorialDB;
+SHOW DATABASES TutorialDB;
+SHOW TABLES FROM TutorialDB;
+SHOW COLUMNS FROM Posts;
+USE TutorialDB;
+SELECT * FROM TutorialDB.Posts;
